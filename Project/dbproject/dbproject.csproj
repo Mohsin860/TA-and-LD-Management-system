@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD9D6751-AF5B-4702-97CA-BCD227F7CDE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dbproject</RootNamespace>
+    <AssemblyName>dbproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminEF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminEF.Designer.cs">
+      <DependentUpon>adminEF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewPf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewPf.Designer.cs">
+      <DependentUpon>AdminViewPf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATaskmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATaskmenu.Designer.cs">
+      <DependentUpon>ATaskmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AViewLDtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AViewLDtask.Designer.cs">
+      <DependentUpon>AViewLDtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db_projectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_projectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Editaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editaccount.Designer.cs">
+      <DependentUpon>Editaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditELD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditELD.Designer.cs">
+      <DependentUpon>EditELD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditETA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditETA.Designer.cs">
+      <DependentUpon>EditETA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditFacultyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFacultyProfile.Designer.cs">
+      <DependentUpon>EditFacultyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditLDsProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLDsProfile.Designer.cs">
+      <DependentUpon>EditLDsProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTAProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTAProfile.Designer.cs">
+      <DependentUpon>EditTAProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EViewTATask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EViewTATask.Designer.cs">
+      <DependentUpon>EViewTATask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyProfile.Designer.cs">
+      <DependentUpon>FacultyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyReg.Designer.cs">
+      <DependentUpon>FacultyReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedbackmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedbackmenu.Designer.cs">
+      <DependentUpon>Feedbackmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDCompleteTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDCompleteTask.Designer.cs">
+      <DependentUpon>LDCompleteTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDFeedback.Designer.cs">
+      <DependentUpon>LDFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDProfile.Designer.cs">
+      <DependentUpon>LDProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDReviews.Designer.cs">
+      <DependentUpon>LDReviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDsHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDsHome.Designer.cs">
+      <DependentUpon>LDsHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDsLogin.Designer.cs">
+      <DependentUpon>LDsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDsReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDsReg.Designer.cs">
+      <DependentUpon>LDsReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDstatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDstatus.Designer.cs">
+      <DependentUpon>LDstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDtask.Designer.cs">
+      <DependentUpon>LDtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registercourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registercourse.Designer.cs">
+      <DependentUpon>Registercourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TACompleteTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TACompleteTask.Designer.cs">
+      <DependentUpon>TACompleteTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAFeedback.Designer.cs">
+      <DependentUpon>TAFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAProfile.Designer.cs">
+      <DependentUpon>TAProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAReviews.Designer.cs">
+      <DependentUpon>TAReviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAs .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAs .Designer.cs">
+      <DependentUpon>TAs .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task.Designer.cs">
+      <DependentUpon>Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taskmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taskmenu.Designer.cs">
+      <DependentUpon>Taskmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskStatus.Designer.cs">
+      <DependentUpon>TaskStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAsReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAsReg.Designer.cs">
+      <DependentUpon>TAsReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAStatus.Designer.cs">
+      <DependentUpon>TAStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAtask.Designer.cs">
+      <DependentUpon>TAtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLDTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLDTask.Designer.cs">
+      <DependentUpon>ViewLDTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTATask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTATask.Designer.cs">
+      <DependentUpon>ViewTATask.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminEF.resx">
+      <DependentUpon>adminEF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewPf.resx">
+      <DependentUpon>AdminViewPf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATaskmenu.resx">
+      <DependentUpon>ATaskmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AViewLDtask.resx">
+      <DependentUpon>AViewLDtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editaccount.resx">
+      <DependentUpon>Editaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditELD.resx">
+      <DependentUpon>EditELD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditETA.resx">
+      <DependentUpon>EditETA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFacultyProfile.resx">
+      <DependentUpon>EditFacultyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLDsProfile.resx">
+      <DependentUpon>EditLDsProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTAProfile.resx">
+      <DependentUpon>EditTAProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EViewTATask.resx">
+      <DependentUpon>EViewTATask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyReg.resx">
+      <DependentUpon>FacultyReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedbackmenu.resx">
+      <DependentUpon>Feedbackmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDCompleteTask.resx">
+      <DependentUpon>LDCompleteTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDFeedback.resx">
+      <DependentUpon>LDFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDReviews.resx">
+      <DependentUpon>LDReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDsHome.resx">
+      <DependentUpon>LDsHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDsLogin.resx">
+      <DependentUpon>LDsLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDsReg.resx">
+      <DependentUpon>LDsReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDstatus.resx">
+      <DependentUpon>LDstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDtask.resx">
+      <DependentUpon>LDtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registercourse.resx">
+      <DependentUpon>Registercourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TACompleteTask.resx">
+      <DependentUpon>TACompleteTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAFeedback.resx">
+      <DependentUpon>TAFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAReviews.resx">
+      <DependentUpon>TAReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAs .resx">
+      <DependentUpon>TAs .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task.resx">
+      <DependentUpon>Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taskmenu.resx">
+      <DependentUpon>Taskmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskStatus.resx">
+      <DependentUpon>TaskStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAsReg.resx">
+      <DependentUpon>TAsReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAStatus.resx">
+      <DependentUpon>TAStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAtask.resx">
+      <DependentUpon>TAtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLDTask.resx">
+      <DependentUpon>ViewLDTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTATask.resx">
+      <DependentUpon>ViewTATask.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="db_projectDataSet.xsc">
+      <DependentUpon>db_projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_projectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_projectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_projectDataSet.xss">
+      <DependentUpon>db_projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
